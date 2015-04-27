@@ -9,25 +9,28 @@ Licensed under WTFPL.
 http://www.wtfpl.net/
  
 */
-
 /* MOBILE SCREEN RESIZING */
 
 @-webkit-viewport {
 	width: device-width;
 	zoom: 1.0;
 }
+
 @-moz-viewport {
 	width: device-width;
 	zoom: 1.0;
 }
+
 @-ms-viewport {
 	width: device-width;
 	zoom: 1.0;
 }
+
 @-o-viewport {
 	width: device-width;
 	zoom: 1.0;
 }
+
 @viewport {
 	width: device-width;
 	zoom: 1.0;
@@ -37,6 +40,7 @@ http://www.wtfpl.net/
 html {
 	font: normal 100%/1.65 serif;
 	/* base font size 18px with 1.65 line-height */
+	
 	-webkit-font-smoothing: antialiased;
 }
 /* RESET */
@@ -131,6 +135,7 @@ video {
 	font-weight: inherit;
 	font-style: normal;
 }
+
 article,
 aside,
 details,
@@ -144,14 +149,17 @@ nav,
 section {
 	display: block;
 }
+
 ol,
 ul {
 	list-style: none;
 }
+
 blockquote,
 q {
 	quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
@@ -159,6 +167,7 @@ q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-spacing: 0;
 	border-collapse: collapse;
@@ -171,6 +180,7 @@ video {
 	height: auto;
 	vertical-align: bottom;
 }
+
 iframe,
 object,
 embed {
@@ -179,8 +189,6 @@ embed {
 /* Natural Box Layout Model */
 
 * {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 /*MOBILE FIRST - STACKED GRIDS*/
@@ -198,11 +206,11 @@ footer,
 	margin: 0 auto;
 	width: 95%;
 }
+
 .blockFull {
 	width: 100%
 }
 /*MAKE YOUR BLOCK FULL WIDTH BY ADDING FULL CLASS E.G. <section class="block full"></section> */
-
 /* CLEARFIX */
 
 .block:after,
@@ -254,6 +262,7 @@ footer:after,
 .reverse {
 	float: none
 }
+
 @media only screen and (min-width: 48em) {
 	header,
 	footer,
@@ -261,12 +270,14 @@ footer:after,
 		max-width: 71.25em
 	}
 	/* COLUMNS */
+	
 	.column,
 	.columns {
 		float: left;
 		margin: 0 1%;
 	}
 	/*12 COLUMN SETUP*/
+	
 	.one {
 		width: 6.333%
 	}
@@ -305,6 +316,7 @@ footer:after,
 		width: 98%
 	}
 	/*FRACTIONAL SETUP - FOURTHS AND THIRDS*/
+	
 	.oneFourth {
 		width: 22.999%
 	}
@@ -321,6 +333,7 @@ footer:after,
 		width: 64.664%
 	}
 	/*OFFSETS*/
+	
 	.offsetOne {
 		margin-left: 9.333%
 	}
@@ -355,6 +368,7 @@ footer:after,
 		margin-left: 92.663%
 	}
 	/*REVERSE*/
+	
 	.reverse {
 		float: right
 	}
