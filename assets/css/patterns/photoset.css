@@ -1,0 +1,92 @@
+/* General photoset style */
+
+.photoset {
+	overflow: hidden;
+	width: 100%;
+}
+.photoset .photoset-row {
+	overflow: hidden;
+	margin-bottom: .5rem;
+	width: 150%;
+}
+.photoset .photoset-row:last-child {
+	margin: 0;
+}
+.photoset .photoset-item {
+	display: block;
+	float: left;
+	margin: 0 .25rem;
+}
+.photoset .photoset-item:first-child {
+	margin-left: 0;
+}
+.photoset .photoset-item:last-child {
+	margin-right: 0;
+}
+.photoset figure {
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+}
+.photoset figcaption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: .5rem;
+	width: 100%;
+	background-color: rgba(255, 255, 255, .75);
+	font-size: .75rem;
+	-webkit-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+	-webkit-transform: translateY(100%);
+	-ms-transform: translateY(100%);
+	transform: translateY(100%);
+}
+.photoset-item a {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+	border: 0;
+	background-position: center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.photoset .photoset-item:hover a + figcaption {
+	-webkit-transform: translateY(0);
+	-ms-transform: translateY(0);
+	transform: translateY(0);
+}
+.photoset img {
+	display: block;
+	max-width: 100%;
+	-webkit-transition: all .25s ease-in-out;
+	transition: all .25s ease-in-out;
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+	.photoset figcaption {
+		display: none;
+	}
+}
+@media screen and (max-width: 480px) {
+	.photoset .photoset-row {
+		width: 100%;
+	}
+	.photoset .photoset-item {
+		float: none;
+		margin: 0 0 .75em 0;
+	}
+	.photoset figcaption {
+		position: relative;
+		display: block;
+		-webkit-transform: none;
+		-ms-transform: none;
+		transform: none;
+	}
+	.photoset img {
+		max-width: 100%;
+	}
+}
